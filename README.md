@@ -8,7 +8,7 @@ A Task Planner with state sync in real-time! 🚀
 
 Tasktit Planner is a simple planner board to manage your tasks, it was made with _ReactJS_ and _Electron_.
 
-It was created for the purpose of managing tasks in an offline environment with a JSON file that is automatically synchronized with the state of the application. The application is easily integrated with any system that can manipulate the JSON file that mirrors the data in real time to the planner board.
+It was created for the purpose of managing tasks in an offline environment with a JSON file that is automatically synchronized with the state of the application. The application is easily integrated with any system who can manipulate the JSON file that mirrors the data in real time to the planner board.
 
 ## ✨ Features
 
