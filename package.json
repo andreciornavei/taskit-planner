@@ -1,0 +1,81 @@
+{
+  "author": "André Ciornavei",
+  "name": "taskit",
+  "description": "A board that sync and watch planning tasks within a json file",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@unform/core": "^2.0.0",
+    "@unform/web": "^2.0.0",
+    "bootstrap": "^4.4.1",
+    "chokidar": "^3.2.1",
+    "electron-is-dev": "^1.1.0",
+    "electron-log": "^3.0.8",
+    "electron-root-path": "^1.0.16",
+    "esm": "^3.2.25",
+    "immer": "^6.0.3",
+    "isobject": "^4.0.0",
+    "react": "^16.10.1",
+    "react-bootstrap": "^1.0.0",
+    "react-dnd": "^10.0.2",
+    "react-dnd-html5-backend": "^10.0.2",
+    "react-dom": "^16.10.1",
+    "react-icons": "^3.7.0",
+    "react-router-dom": "^5.1.2",
+    "react-s-alert": "^1.4.1",
+    "react-scripts": "3.1.2",
+    "styled-components": "^4.4.0",
+    "yup": "^0.28.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "sass": "node-sass --watch src/styles/scss --output src/styles/css",
+    "electron": "concurrently \"yarn start\" \"wait-on http://localhost:3000 && electron .\"",
+    "postinstall": "electron-builder install-app-deps",
+    "preelectron-pack": "yarn build",
+    "electron-pack": "electron-builder -w -c.extraMetadata.main=build/main.js"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.2",
+    "electron": "^6.0.11",
+    "electron-builder": "^21.2.0",
+    "wait-on": "^3.3.0"
+  },
+  "win": {
+    "target": "nsis",
+    "icon": "./assets/icon.png"
+  },
+  "build": {
+    "appId": "br.com.andreciornavei.taskit",
+    "productName": "Taskit",
+    "copyright": "copyright © 2020 andreciornavei",
+    "files": [
+      "build/**/*",
+      "assets/**/*",
+      "node_modules/**/*"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    }
+  },
+  "homepage": "./",
+  "main": "public/main.js"
+}

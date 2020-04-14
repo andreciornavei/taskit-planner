@@ -1,0 +1,37 @@
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+$font-family-sans-serif: 'Arial', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+$primary: #2680EB;
+$secondary: #de2b52;
+$reactdark:#002e3d;
+$reactlight: #8a99ad;
+
+$enable-rounded:   true;
+
+$theme-colors: (
+   reactdark: $reactdark,
+   reactlight: $reactlight,
+   blue: #2680EB,
+   green: #1DC9B7,
+   red:#EF6262,
+   basic: #0b99b2,
+   marine: #3F5864,
+);
+
+
