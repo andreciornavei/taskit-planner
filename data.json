@@ -1,1 +1,21 @@
-{"rows":5,"cols":5,"data":{"B1":[{"title":"Task Simple"},{"title":"Task Simple 2"},{"title":"Task Simple 3"}],"A3":[{"title":"Task with more information, cell is auto-scale in heigh."}],"A4":[{"title":"Task simple"},{"title":"Task Simple"},{"title":"Task simple"}],"B5":[{"title":"Task simple"},{"title":"Task simple"},{"title":"Task simple"},{"title":"Task simple"},{"title":"Task simple"}],"C4":[{"title":"Task Simple"}]},"title_row":{"1":"Left Header","2":"Left Header - No tasks","3":"Left Header","4":"Left Header","5":"Left Header Huge"},"title_column":{"A":"Top Header","B":"Top Header","C":"Top Header","D":"Top Header","E":"Top Header"}}
+{
+  "rows": 3,
+  "cols": 3,
+  "data": {
+    "A1": [
+      { "title": "Simple task 1" },
+      { "title": "Simple task with more information to increse height" },
+      { "title": "Simple task 3 with more information to increase height" }
+    ],
+    "A3": [
+      { "title": "Simple task 1" },
+      { "title": "Simple task with more information to increase height." }
+    ],
+    "C2": [
+      { "title": "Simple task 1" },
+      { "title": "Simple task 2 with more information to increase height" }
+    ]
+  },
+  "title_column": { "A": "Column A", "B": "Column B", "C": "Column C" },
+  "title_row": { "1": "Row 1", "2": "Row 2", "3": "Row 3" }
+}

@@ -36,7 +36,8 @@
     "electron": "concurrently \"yarn start\" \"wait-on http://localhost:3000 && electron .\"",
     "postinstall": "electron-builder install-app-deps",
     "preelectron-pack": "yarn build",
-    "electron-pack": "electron-builder -w -c.extraMetadata.main=build/main.js"
+    "electron-pack": "electron-builder -c.extraMetadata.main=build/main.js",
+    "electron-build" : "concurrently \"yarn preelectron-pack\" \"yarn electron-pack\" \"yarn postinstall\" "
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -77,5 +78,24 @@
     }
   },
   "homepage": "./",
-  "main": "public/main.js"
+  "main": "public/main.js",
+  "mac": {
+    "category": "public.app-category.developer-tools",
+    "icon": "./assets/icon.png",
+    "extendInfo": {
+      "LSUIElement": 1
+    }
+  },
+  "dmg": {
+    "window": {
+      "width": 537,
+      "height": 350
+    }
+  },
+  "linux": {
+    "category": "Utility",
+    "target": [
+      "deb"
+    ]
+  }
 }
