@@ -1,7 +1,7 @@
 {
   "author": "André Ciornavei",
   "name": "taskit",
-  "description": "A board that sync and watch planning tasks within a json file",
+  "description": "A Task Planner with state sync in real-time",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
